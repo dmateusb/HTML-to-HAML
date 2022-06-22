@@ -2,7 +2,6 @@ import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
-import org.json.JSONObject;
 import spark.Request;
 import spark.Response;
 
@@ -15,6 +14,7 @@ public class TranslateController{
 
         // Capture body param
         String original_text = req.body();
+        System.out.println();
         //JSONObject body_json = new JSONObject(body);
         //String original_text = (String) body_json.get("text");
 
@@ -32,7 +32,7 @@ public class TranslateController{
 
         ParseTree tree = parser.htmlDocument();
         ParseTreeWalker walker = new ParseTreeWalker();
-        walker.walk(new Traductor(), tree);
+        walker.walk(new Translator(), tree);
         previousConsole.println(newConsole.toString());
         System.setOut(previousConsole);
         String translated_text =  newConsole.toString();
