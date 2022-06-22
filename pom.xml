@@ -23,7 +23,7 @@
             <artifactId>spark-kotlin</artifactId>
             <version>1.0.0-alpha</version>
         </dependency>
-slim
+
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>

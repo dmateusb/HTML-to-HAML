@@ -1,4 +1,4 @@
-// Generated from /home/david/Escritorio/Slim/grammar/HTMLParser.g4 by ANTLR 4.10.1
+// Generated from /home/david/Escritorio/HTML to HAML/grammar/HTMLParser.g4 by ANTLR 4.10.1
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**

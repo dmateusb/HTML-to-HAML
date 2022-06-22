@@ -1,4 +1,4 @@
-// Generated from /home/david/Escritorio/Slim/grammar/HTMLLexer.g4 by ANTLR 4.10.1
+// Generated from /home/david/Escritorio/HTML to HAML/grammar/HTMLLexer.g4 by ANTLR 4.10.1
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
