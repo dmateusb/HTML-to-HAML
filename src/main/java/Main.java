@@ -2,16 +2,10 @@ import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
-import spark.Request;
-import spark.Response;
-import spark.Route;
-
-import static spark.Spark.get;
 
 public class Main {
     public static void main(String[] args) {
-        get("/hello", (req, res) -> "Hello World");
-
+        Server.run();
         try{
             HTMLLexer lexer;
             if (args.length>0)
